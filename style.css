@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+
+:root {
+  --Yellow: #f4d04e;
+  --Gray_500: #6b6b6b;
+  --Gray_950: #121212;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+}
+
+* {
+  font-family: "Figtree", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Yellow);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--Gray_950);
+}
+
+#preview-card-container {
+  width: 384px;
+  height: 565px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px 0px black;
+  padding: 1.2rem;
+  margin: 6.5rem auto;
+}
+
+.preview-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-card-img img {
+  border-radius: 10px;
+}
+
+.preview-card-text {
+  margin-top: 1.2rem;
+  margin-left: 5px;
+}
+
+.yellow-bg {
+  background-color: var(--Yellow);
+  padding: 4px 12px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.published-date {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.blog-title {
+  font-size: var(--font-size-large);
+  font-weight: 800;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.preview-text {
+  color: var(--Gray_500);
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-avatar-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.blog-post-avatar-container img {
+  border-radius: 50%;
+}
+
+.blog-post-avatar-name {
+  margin: 15px;
+  font-weight: 800;
+}
+
+/*      
+
+    Media Queries 
+
+*/
+
+@media screen and (max-width: 500px) {
+  #preview-card-container {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .preview-card-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .preview-card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
